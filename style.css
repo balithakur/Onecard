@@ -1,0 +1,153 @@
+/* source reset */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html body{
+    height: 100%;
+    width: 95%;
+    margin-left: 2.5%;          
+    margin-right: 2.5%;
+}
+.nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+
+}
+.leftnav{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin-top: 5px;
+}
+.leftnav img{
+    width:93%;
+}
+.rightnav{
+    display: flex;
+    width: 85%;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+.rightnav a{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+.rightnav button{
+    /* padding: 2px 3px; */
+    background-color: #1893f7;
+    border: none;
+    border-radius: 3px;
+}
+.rightnav button a{
+    
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+.rightnav a:hover{
+    font-size: 14px;
+}
+/* left hero */
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+.lefthero{
+    margin-top: 50px;
+    width: 52.5%;   
+}
+.bank_img{
+    width: 85%;
+    margin-top: 10px;
+}
+.btn{
+    margin-top: 20px;
+}
+.lefthero h2{
+    margin-bottom: 10px;
+}
+.lefthero h1{
+    color: #1893f7;
+    font-weight: 700;
+    font-size: 50px;
+}
+.heroheadline{
+    margin-top: 20px;
+    color: #1893f7;
+    font-weight: 700;
+}
+.herocontent{
+    word-spacing: 0.2cm;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: #2c2c2c;
+}
+.righthero{
+    width: 52.5%;
+}
+.righthero video{
+    width: 100%;
+}
+.mobile_nav{
+    visibility:hidden;
+    display: none;
+}
+@media (max-width:990px){
+    .rightnav{
+        visibility: hidden;
+        display: none;
+    }
+    .mobile_nav{
+        width:72%;
+        visibility:visible;
+        display: flex;
+        justify-content:flex-end;
+    }
+    .mobile_nav img{
+        width:25px;
+        height:19px;
+        margin-top: 5px;
+    }
+    .mobile_nav button{
+        visibility: visible;
+        margin-left: 20px;
+        background-color: #1893f7;
+        border: none;
+        border-radius: 3px;
+        width:85px;
+        height:30px;
+    }
+    .mobile_nav button a{
+            color: #fff;
+            font-weight: 700;
+            font-size: .9rem;
+            text-decoration: none;
+
+    }
+}
+@media (max-width:767px){
+    .hero{
+        display:block;
+    }
+    .lefthero{
+        width:100%;
+    }
+    .righthero{
+        width:100%;
+    }
+    .leftnav{
+        margin-top: 5px;
+        width:90px;
+    }
+}
